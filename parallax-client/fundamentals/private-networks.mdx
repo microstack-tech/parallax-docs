@@ -18,8 +18,6 @@ prlx --networkid 12345
 
 ### Choosing A Consensus Algorithm
 
-While the main network uses Istanbul Byzantine Fault Tolerant (IBFT) to secure the blockchain, the Parallax client also supports the the 'Clique' proof-of-authority (PoA) consensus algorithm and the Ethash proof-of-work algorithm as alternatives for private networks. Clique is strongly recommended for private testnets because PoA is far less resource-intensive than PoW. The key differences between the consensus algorithms available in Parallax are:
-
 #### **Ethash**
 
 Parallax's PoW algorithm, Ethash, is a system that allows open participation by anyone willing to dedicate resources to mining. While this is a critical property for a public network, the overall security of the blockchain strictly depends on the total amount of resources used to secure it. As such, PoW is a poor choice for private networks with few miners. The Ethash mining 'difficulty' is adjusted automatically so that new blocks are created approximately 12 seconds apart. As more mining resources are deployed on the network, creating a new block becomes harder so that the average block time matches the target block time.

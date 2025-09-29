@@ -205,7 +205,6 @@
                 "pages": [
                   "parallax-client/monitoring/creating-dashboards",
                   "parallax-client/monitoring/understanding-dashboards",
-                  "parallax-client/monitoring/ethstats",
                   "parallax-client/monitoring/metrics"
                 ]
               },
@@ -227,8 +226,7 @@
                   "parallax-client/tools/abi-gen",
                   "parallax-client/tools/devp2p"
                 ]
-              },
-              "parallax-client/faq"
+              }
             ]
           }
         ]
