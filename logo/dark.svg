@@ -16,19 +16,19 @@
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
      id="namedview1"
-     pagecolor="#ffffff"
+     pagecolor="#000000"
      bordercolor="#000000"
      borderopacity="0.25"
      inkscape:showpageshadow="2"
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="false"
-     inkscape:deskcolor="#d1d1d1"
+     inkscape:deskcolor="#282828"
      inkscape:document-units="px"
      showguides="false"
      showgrid="true"
-     inkscape:zoom="0.16"
-     inkscape:cx="5171.875"
-     inkscape:cy="2631.25"
+     inkscape:zoom="0.11313709"
+     inkscape:cx="1621.9262"
+     inkscape:cy="1997.5767"
      inkscape:window-width="2560"
      inkscape:window-height="1403"
      inkscape:window-x="0"
@@ -121,26 +121,26 @@
        sodipodi:insensitive="true" />
     <text
        xml:space="preserve"
-       transform="matrix(0.38698568,0,0,0.38698568,38.432133,-33.586387)"
-       id="text2"
-       style="font-size:866.667px;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2);display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
-       sodipodi:insensitive="true"><tspan
-         x="1300"
-         y="888.55879"
-         id="tspan4"><tspan
-           dx="0 0 0 0 0 -0.00010681152 0 0.00018310547"
-           style="font-weight:600;font-family:Geist;-inkscape-font-specification:'Geist Semi-Bold'"
-           id="tspan2">Parallax</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:333.481px;font-family:Geist;-inkscape-font-specification:Geist;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:0.30000001;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:0.3"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:333.481px;font-family:Geist;-inkscape-font-specification:Geist;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:0.3"
        x="1926.7269"
        y="310.25098"
-       id="text3"><tspan
+       id="text3"
+       sodipodi:insensitive="true"><tspan
          sodipodi:role="line"
          id="tspan1"
-         style="font-size:333.481px;fill:#ffffff;fill-opacity:0.30000001;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:0.3"
+         style="font-size:333.481px;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:0.3"
          x="1926.7269"
          y="310.25098">Docs</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:333.481px;font-family:Geist;-inkscape-font-specification:Geist;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:0.3"
+       x="537.66455"
+       y="310.26816"
+       id="text3-2"><tspan
+         sodipodi:role="line"
+         id="tspan1-7"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:333.481px;font-family:Geist;-inkscape-font-specification:'Geist Semi-Bold';fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:0.3"
+         x="537.66455"
+         y="310.26816">Parallax</tspan></text>
   </g>
 </svg>
