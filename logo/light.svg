@@ -2,13 +2,16 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="9625"
-   height="1200"
-   viewBox="0 0 2546.6143 317.49996"
+   width="1600"
+   height="200"
+   viewBox="0 0 423.33329 52.91666"
    version="1.1"
    id="svg1"
    inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
    sodipodi:docname="light.svg"
+   inkscape:export-filename="dark.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -22,13 +25,13 @@
      inkscape:showpageshadow="2"
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="false"
-     inkscape:deskcolor="#d1d1d1"
+     inkscape:deskcolor="#282828"
      inkscape:document-units="px"
      showguides="false"
      showgrid="true"
-     inkscape:zoom="0.16"
-     inkscape:cx="6546.8749"
-     inkscape:cy="2750"
+     inkscape:zoom="0.90509668"
+     inkscape:cx="701.03008"
+     inkscape:cy="382.2796"
      inkscape:window-width="2560"
      inkscape:window-height="1403"
      inkscape:window-x="0"
@@ -38,8 +41,8 @@
     <inkscape:page
        x="0"
        y="0"
-       width="2546.6143"
-       height="317.49997"
+       width="423.33328"
+       height="52.91666"
        id="page1"
        margin="0"
        bleed="0" />
@@ -101,46 +104,39 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-145.01123,-32.460674)">
+     transform="matrix(0.16637933,0,0,0.16637933,-24.126884,-5.4007945)">
     <circle
        style="fill:#000000;fill-opacity:1;stroke-width:0.3175"
        id="path8"
        cx="303.7612"
        cy="191.21065"
-       r="158.74998"
-       sodipodi:insensitive="true" />
+       r="158.74998" />
     <path
        id="path4"
        style="fill:url(#linearGradient8);stroke-width:0.264583"
        d="m 197.97008,130.03375 -0.0214,30.61331 108.49225,-62.63803 0.007,-0.004 0.007,0.01164 52.90338,30.54359 -26.45177,15.27194 -26.46448,15.27987 1.8e-4,-7e-4 -108.53587,62.66321 -0.0213,30.51422 0.0429,0.0247 L 409.59446,130.1078 303.88925,68.980459 Z m 26.39475,137.56774 79.35321,45.88867 105.91862,-61.05365 0.0215,-30.71125 -110.18258,63.61394 -0.003,-0.005 -26.45194,-15.27225 26.45847,-15.27581 110.20048,-63.62427 0.0213,-30.56377 z"
        sodipodi:insensitive="true" />
-    <path
-       id="path6"
-       style="display:none;stroke-width:0.264583"
-       d="M 338.28264,257.4843 216.02762,257.3991 154.974,151.48048 216.17537,45.647194 338.4304,45.732484 399.48404,151.65109 Z"
-       sodipodi:insensitive="true" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:333.481px;font-family:Geist;-inkscape-font-specification:Geist;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:0.3;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:0.3"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:333.481px;font-family:Geist;-inkscape-font-specification:Geist;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:0.40000001;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:0.3"
        x="1926.7269"
        y="310.25098"
-       id="text3"
-       sodipodi:insensitive="true"><tspan
+       id="text3"><tspan
          sodipodi:role="line"
          id="tspan1"
-         style="font-size:333.481px;fill:#000000;fill-opacity:0.3;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:0.3"
+         style="font-size:333.481px;fill:#000000;fill-opacity:0.40000001;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:0.3"
          x="1926.7269"
          y="310.25098">Docs</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:333.481px;font-family:Geist;-inkscape-font-specification:Geist;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:0.3;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:0.3"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:333.481px;font-family:Geist;-inkscape-font-specification:Geist;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:0.3"
        x="537.66455"
-       y="310.29602"
-       id="text3-3"><tspan
+       y="310.26816"
+       id="text3-2"><tspan
          sodipodi:role="line"
-         id="tspan1-5"
+         id="tspan1-7"
          style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:333.481px;font-family:Geist;-inkscape-font-specification:'Geist Semi-Bold';fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:0.3"
          x="537.66455"
-         y="310.29602">Parallax</tspan></text>
+         y="310.26816">Parallax</tspan></text>
   </g>
 </svg>

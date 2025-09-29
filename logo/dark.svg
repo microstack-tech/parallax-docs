@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="9625"
-   height="1200"
-   viewBox="0 0 2546.6143 317.49996"
+   width="1600"
+   height="200"
+   viewBox="0 0 423.33329 52.91666"
    version="1.1"
    id="svg1"
    inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
@@ -26,9 +26,9 @@
      inkscape:document-units="px"
      showguides="false"
      showgrid="true"
-     inkscape:zoom="0.11313709"
-     inkscape:cx="1621.9262"
-     inkscape:cy="1997.5767"
+     inkscape:zoom="0.64000003"
+     inkscape:cx="540.62498"
+     inkscape:cy="456.24998"
      inkscape:window-width="2560"
      inkscape:window-height="1403"
      inkscape:window-x="0"
@@ -38,8 +38,8 @@
     <inkscape:page
        x="0"
        y="0"
-       width="2546.6143"
-       height="317.49997"
+       width="423.33328"
+       height="52.91666"
        id="page1"
        margin="0"
        bleed="0" />
@@ -101,7 +101,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-145.01123,-32.460674)">
+     transform="matrix(0.16637933,0,0,0.16637933,-24.126884,-5.4007949)">
     <circle
        style="fill:#ffffff;fill-opacity:1;stroke-width:0.3175"
        id="path8"
@@ -114,21 +114,15 @@
        style="fill:url(#linearGradient8);stroke-width:0.264583"
        d="m 197.97008,130.03375 -0.0214,30.61331 108.49225,-62.63803 0.007,-0.004 0.007,0.01164 52.90338,30.54359 -26.45177,15.27194 -26.46448,15.27987 1.8e-4,-7e-4 -108.53587,62.66321 -0.0213,30.51422 0.0429,0.0247 L 409.59446,130.1078 303.88925,68.980459 Z m 26.39475,137.56774 79.35321,45.88867 105.91862,-61.05365 0.0215,-30.71125 -110.18258,63.61394 -0.003,-0.005 -26.45194,-15.27225 26.45847,-15.27581 110.20048,-63.62427 0.0213,-30.56377 z"
        sodipodi:insensitive="true" />
-    <path
-       id="path6"
-       style="display:none;stroke-width:0.264583"
-       d="M 338.28264,257.4843 216.02762,257.3991 154.974,151.48048 216.17537,45.647194 338.4304,45.732484 399.48404,151.65109 Z"
-       sodipodi:insensitive="true" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:333.481px;font-family:Geist;-inkscape-font-specification:Geist;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:0.3"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:333.481px;font-family:Geist;-inkscape-font-specification:Geist;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:0.40000001;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:0.3"
        x="1926.7269"
        y="310.25098"
-       id="text3"
-       sodipodi:insensitive="true"><tspan
+       id="text3"><tspan
          sodipodi:role="line"
          id="tspan1"
-         style="font-size:333.481px;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:0.3"
+         style="font-size:333.481px;fill:#ffffff;fill-opacity:0.40000001;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:0.3"
          x="1926.7269"
          y="310.25098">Docs</tspan></text>
     <text
