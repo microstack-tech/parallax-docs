@@ -233,19 +233,6 @@
             ]
           }
         ]
-      },
-      {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Getting started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          }
-        ]
       }
     ],
     "global": {
