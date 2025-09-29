@@ -73,10 +73,10 @@ It is important to save the account address and the password somewhere secure. T
 
 The previous commands used Clef's newaccount function to add new key pairs to the keystore. Clef uses the private key(s) saved in the keystore to sign transactions. In order to do this, Clef needs to be started and left running while the Parallax client is running simultaneously, so that the two programs can communicate between one another.
 
-To start Clef, run the Clef executable passing as arguments the keystore file location, config directory location and a chain ID. The config directory was automatically created inside the parallax-tutorial directory during the previous step. The [chain ID](https://chainlist.org/) is an integer that defines which EVM compatible network to connect to. Parallax mainnet has **chain ID 2110**. In this tutorial Chain ID **2111** is used which is that of the Parallax testnet. It is very important that this chain ID parameter is set to 5201420 - Clef uses the chain ID to sign messages so it must be correct. The following command starts Clef on Parallax testnet:
+To start Clef, run the Clef executable passing as arguments the keystore file location, config directory location and a chain ID. The config directory was automatically created inside the parallax-tutorial directory during the previous step. The [chain ID](https://chainlist.org/) is an integer that defines which EVM compatible network to connect to. Parallax mainnet has **chain ID 2110**. In this tutorial Chain ID **2111** is used which is that of the Parallax testnet. It is very important that this chain ID parameter is set to 2111 - Clef uses the chain ID to sign messages so it must be correct. The following command starts Clef on Parallax testnet:
 
 ```sh
-clef --keystore parallax-tutorial/keystore --configdir parallax-tutorial/clef --chainid 5201420
+clef --keystore parallax-tutorial/keystore --configdir parallax-tutorial/clef --chainid 2111
 ```
 
 After running the command above, Clef requests the user to type “ok” to proceed. On typing "ok" and pressing enter, Clef returns the following to the terminal:
@@ -85,7 +85,7 @@ After running the command above, Clef requests the user to type “ok” to proc
 INFO [02-10|13:55:30.812] Using CLI as UI-channel
 INFO [02-10|13:55:30.946] Loaded 4byte database                    embeds=146,841 locals=0 local=./4byte-custom.json
 WARN [02-10|13:55:30.947] Failed to open master, rules disabled    err="failed stat on parallax-tutorial/clef/masterseed.json: stat parallax-tutorial/clef/masterseed.json: no such file or directory"
-INFO [02-10|13:55:30.947] Starting signer                          chainid=5201420 keystore=parallax-tutorial/keystore light-kdf=false advanced=false
+INFO [02-10|13:55:30.947] Starting signer                          chainid=2111 keystore=parallax-tutorial/keystore light-kdf=false advanced=false
 DEBUG[02-10|13:55:30.948] FS scan times                            list="133.35µs" set="5.692µs" diff="3.262µs"
 DEBUG[02-10|13:55:30.970] Ledger support enabled
 DEBUG[02-10|13:55:30.973] Trezor support enabled via HID

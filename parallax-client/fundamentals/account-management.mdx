@@ -15,7 +15,7 @@ It is extremely important to remember the master seed and keep it secure. It all
 Clef and the Parallax client should be started separately but with complementary configurations so that they can communicate. This requires Clef to know the `chain_id` of the network the Parallax client will connect to so that this information can be included in any signatures. Clef also needs to know the location of the keystore where accounts are (or will be) stored. This is usually in a subdirectory inside the Parallax client's data directory. Clef is also given a data directory which is also often placed conveniently inside Parallax client's data directory. To enable communication with Clef using Curl, `--http` can be passed which will start an HTTP server on `localhost:8550` by default. To start Clef configured for a Parallax node connecting to the testnet:
 
 ```sh
-clef --chainid 5201420 --keystore ~/.parallax/testnet/keystore --configdir ~/parallax/testnet/clef --http
+clef --chainid 2111 --keystore ~/.parallax/testnet/keystore --configdir ~/parallax/testnet/clef --http
 ```
 
 Clef will start running in the terminal, beginning with a disclaimer and a prompt to click "ok":

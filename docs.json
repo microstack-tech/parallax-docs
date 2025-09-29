@@ -155,7 +155,6 @@
                       "parallax-client/interacting-with-parallax/json-rpc-namespaces/eth",
                       "parallax-client/interacting-with-parallax/json-rpc-namespaces/les",
                       "parallax-client/interacting-with-parallax/json-rpc-namespaces/miner",
-                      "parallax-client/interacting-with-parallax/json-rpc-namespaces/ethash",
                       "parallax-client/interacting-with-parallax/json-rpc-namespaces/net",
                       "parallax-client/interacting-with-parallax/json-rpc-namespaces/personal",
                       "parallax-client/interacting-with-parallax/json-rpc-namespaces/txpool"
