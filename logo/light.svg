@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="1600"
+   width="1605"
    height="200"
-   viewBox="0 0 423.33329 52.91666"
+   viewBox="0 0 424.65621 52.91666"
    version="1.1"
    id="svg1"
    inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
@@ -29,9 +29,9 @@
      inkscape:document-units="px"
      showguides="false"
      showgrid="true"
-     inkscape:zoom="0.90509668"
-     inkscape:cx="701.03008"
-     inkscape:cy="382.2796"
+     inkscape:zoom="0.64"
+     inkscape:cx="814.0625"
+     inkscape:cy="345.3125"
      inkscape:window-width="2560"
      inkscape:window-height="1403"
      inkscape:window-x="0"
@@ -41,7 +41,7 @@
     <inkscape:page
        x="0"
        y="0"
-       width="423.33328"
+       width="424.65622"
        height="52.91666"
        id="page1"
        margin="0"
@@ -104,7 +104,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="matrix(0.16637933,0,0,0.16637933,-24.126884,-5.4007945)">
+     transform="matrix(0.1666667,0,0,0.1666667,-24.168556,-5.4101227)">
     <circle
        style="fill:#000000;fill-opacity:1;stroke-width:0.3175"
        id="path8"
@@ -118,13 +118,13 @@
        sodipodi:insensitive="true" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:333.481px;font-family:Geist;-inkscape-font-specification:Geist;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:0.40000001;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:0.3"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:333.481px;font-family:Geist;-inkscape-font-specification:Geist;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:0.4;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:0.3"
        x="1926.7269"
        y="310.25098"
        id="text3"><tspan
          sodipodi:role="line"
          id="tspan1"
-         style="font-size:333.481px;fill:#000000;fill-opacity:0.40000001;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:0.3"
+         style="font-size:333.481px;fill:#000000;fill-opacity:0.4;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:0.3"
          x="1926.7269"
          y="310.25098">Docs</tspan></text>
     <text
