@@ -71,7 +71,7 @@ nonce, err := cl.NonceAt(context.Background(), addr, big.NewInt(14000000))
 
 ### Querying past events
 
-Contracts emit events during execution which can be queried from the client. The parameters for the event one is interested in have to be filled out in the `ethereum.FilterQuery` object. This includes which event topics are of interest, from which contracts and during which range of blocks. The example below queries Transfer events of all ERC-20 tokens for the last 10 blocks:
+Contracts emit events during execution which can be queried from the client. The parameters for the event one is interested in have to be filled out in the `parallax.FilterQuery` object. This includes which event topics are of interest, from which contracts and during which range of blocks. The example below queries Transfer events of all ERC-20 tokens for the last 10 blocks:
 
 ```go
 blockNumber, err := cl.BlockNumber(context.Background())
@@ -84,7 +84,7 @@ blockNumberBig := big.NewInt(int64(blockNumber))
 eventSignatureBytes := []byte("Transfer(address,address,uint256)")
 eventSignaturehash := crypto.Keccak256Hash(eventSignatureBytes)
 
-q := ethereum.FilterQuery{
+q := parallax.FilterQuery{
  FromBlock: new(big.Int).Sub(blockNumberBig, big.NewInt(10)),
  ToBlock:   blockNumberBig,
  Topics: [][]common.Hash{
