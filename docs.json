@@ -245,7 +245,8 @@
             "group": "Mining",
             "pages": [
               "guides/mining/cpu",
-              "guides/mining/gpu"
+              "guides/mining/gpu",
+              "guides/mining/pool"
             ]
           }
         ]
