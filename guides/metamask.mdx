@@ -1,0 +1,91 @@
+---
+title: "Setting up MetaMask"
+---
+
+[MetaMask](https://metamask.io/) is one of the most popular crypto wallets for interacting with blockchains.  
+
+By adding Parallax as a **custom network**, you can use MetaMask to create addresses, manage balances, and transfer Parallax coins (laxes).
+
+This guide will show you how to connect MetaMask to your local Parallax node.
+
+---
+
+## Prerequisites
+
+- You have already installed and started the [Parallax client](./setup).  
+- MetaMask is installed in your browser (Chrome, Firefox, Brave, or Edge).  
+  - If not, download it from [metamask.io](https://metamask.io/download).
+
+---
+
+## Step-by-step Guide
+
+<Steps>
+  <Step title="Open MetaMask settings">
+    1. Click the **MetaMask extension** in your browser.  
+    2. Open the **account menu** (top-right circle).  
+    3. Select **Settings** → **Networks**.
+  </Step>
+
+  <Step title="Add a custom network">
+    Click **Add a network** and then choose **Add a network manually**.
+  </Step>
+
+  <Step title="Enter Parallax network details">
+    Fill in the fields with the following information:
+
+    - **Network Name:** `Parallax Local`  
+    - **New RPC URL:** `http://127.0.0.1:8545`  
+    - **Chain ID:** `2110` for mainnet, `2111` for testnet  
+    - **Currency Symbol:** `LAX`  
+    - **Block Explorer URL:** (optional) `https://explorer.parallaxchain.org`  
+
+    <Note>
+    The `http://127.0.0.1:8545` RPC is provided by your local Parallax client. Make sure your node is running with the `--http` flag enabled.
+    </Note>
+  </Step>
+
+  <Step title="Save and switch network">
+    After saving, MetaMask will add **Parallax Local** to your list of networks.  
+
+    Select it, and MetaMask will connect to your local Parallax node.
+  </Step>
+</Steps>
+
+---
+
+## Using MetaMask with Parallax
+
+Once connected, you can:
+
+- **Create new addresses**: MetaMask will generate them automatically.  
+- **View balances**: See how much laxes each address holds.  
+- **Send transactions**: Transfer laxes to other addresses on the Parallax network.
+
+---
+
+## Troubleshooting
+
+- If MetaMask can’t connect, ensure your node is running with HTTP enabled:  
+
+  ```bash
+  ./prlx --http --http.api "eth,net,web"
+  ```
+
+- Make sure the RPC URL (`127.0.0.1:8545`) is correct.  
+- If using a firewall, check that port **8545** is not blocked.
+- If on Linux, make sure to set `--http.addr 0.0.0.0` when starting the Parallax client:
+
+  ```bash
+  ./prlx --http --http.addr 0.0.0.0 --http.api "eth,net,web"
+  ```
+
+- Some browsers might fail to connect MetaMask to your local Parallax node. This can be fixed by running the client with:
+
+  ```bash
+  ./prlx --http --http.vhosts "*" --http.corsdomain "*"
+  ```
+
+---
+
+✨ That’s it! You’re now using MetaMask with Parallax to manage addresses and send Laxes.
