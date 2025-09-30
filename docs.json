@@ -230,6 +230,17 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Parallax Client",
+            "pages": [
+              "guides/setup"
+            ]
+          }
+        ]
       }
     ],
     "global": {
