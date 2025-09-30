@@ -240,6 +240,13 @@
               "guides/setup",
               "guides/metamask"
             ]
+          },
+          {
+            "group": "Mining",
+            "pages": [
+              "guides/mining/cpu",
+              "guides/mining/gpu"
+            ]
           }
         ]
       }
