@@ -238,8 +238,17 @@
             "group": "Parallax Client",
             "pages": [
               "guides/client/introduction",
-              "guides/client/setup",
-              "guides/client/metamask"
+              "guides/client/setup"
+            ]
+          },
+          {
+            "group": "Wallets",
+            "pages": [
+              "guides/wallets/accounts",
+              "guides/wallets/metamask",
+              "guides/wallets/send-and-reveive",
+              "guides/wallets/explorer",
+              "guides/wallets/keep-safe"
             ]
           },
           {
