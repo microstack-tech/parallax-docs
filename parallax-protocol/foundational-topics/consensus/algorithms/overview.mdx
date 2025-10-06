@@ -3,7 +3,7 @@ title: 'Mining Algorithms'
 sidebarTitle: 'Overview'
 ---
 
-Parallax mining uses an algorithm known as Ethash. The fundamental idea of the algorithm is that a miner tries to find a nonce input using brute force computation so that the resulting hash is smaller than a threshold determined by the calculated difficulty. This difficulty level is dynamically adjusted, allowing block production to happen at a regular interval.
+Parallax mining uses an algorithm known as XHash. The fundamental idea of the algorithm is that a miner tries to find a nonce input using brute force computation so that the resulting hash is smaller than a threshold determined by the calculated difficulty. This difficulty level is dynamically adjusted, allowing block production to happen at a regular interval.
 
 ## Prerequisites
 
@@ -23,6 +23,12 @@ Dagger-Hashimoto used amended versions of the Dagger and Hashimoto algorithms. T
 
 ## Ethash
 
-Ethash is the mining algorithm that is actually used on Parallax. Ethash is effectively a new name given to a specific version of Dagger-Hashimoto after the algorithm got significantly updated, whilst still inheriting the fundamental principles of its predecessor.
+Ethash was the proof-of-work mining algorithm used in Ethereum. Ethash is effectively a new name given to a specific version of Dagger-Hashimoto after the algorithm got significantly updated, whilst still inheriting the fundamental principles of its predecessor.
 
 [More on Ethash.](./ethash)
+
+## XHash
+
+XHash is the mining algorithm that is actually used in Parallax. It is based on Ethash but with some minor changes to make existing Ethash ASICs obsolete in Parallax.
+
+[More on XHash.](./xhash)

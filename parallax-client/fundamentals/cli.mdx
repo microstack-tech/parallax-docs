@@ -42,8 +42,8 @@ COMMANDS:
    init                               Bootstrap and initialize a new genesis block
    js                                 Execute the specified JavaScript files
    license                            Display license information
-   makecache                          Generate ethash verification cache (for testing)
-   makedag                            Generate ethash mining DAG (for testing)
+   makecache                          Generate XHash verification cache (for testing)
+   makedag                            Generate XHash mining DAG (for testing)
    removedb                           Remove blockchain and state databases
    show-deprecated-flags              Show flags that have been deprecated
    snapshot                           A set of commands based on the snapshot
@@ -89,15 +89,15 @@ DEVELOPER CHAIN OPTIONS:
   --dev.period value                  Block period to use in developer mode (0 = mine only if transaction pending) (default: 0)
   --dev.gaslimit value                Initial block gas limit (default: 11500000)
 
-ETHASH OPTIONS:
-  --ethash.cachedir value             Directory to store the ethash verification caches (default = inside the datadir)
-  --ethash.cachesinmem value          Number of recent ethash caches to keep in memory (16MB each) (default: 2)
-  --ethash.cachesondisk value         Number of recent ethash caches to keep on disk (16MB each) (default: 3)
-  --ethash.cacheslockmmap             Lock memory maps of recent ethash caches
-  --ethash.dagdir value               Directory to store the ethash mining DAGs (default: "/home/andrepatta/.ethash")
-  --ethash.dagsinmem value            Number of recent ethash mining DAGs to keep in memory (1+GB each) (default: 1)
-  --ethash.dagsondisk value           Number of recent ethash mining DAGs to keep on disk (1+GB each) (default: 2)
-  --ethash.dagslockmmap               Lock memory maps for recent ethash mining DAGs
+XHASH OPTIONS:
+  --xhash.cachedir value             Directory to store the XHash verification caches (default = inside the datadir)
+  --xhash.cachesinmem value          Number of recent XHash caches to keep in memory (16MB each) (default: 2)
+  --xhash.cachesondisk value         Number of recent XHash caches to keep on disk (16MB each) (default: 3)
+  --xhash.cacheslockmmap             Lock memory maps of recent XHash caches
+  --xhash.dagdir value               Directory to store the XHash mining DAGs (default: "/home/andrepatta/.xhash")
+  --xhash.dagsinmem value            Number of recent XHash mining DAGs to keep in memory (1+GB each) (default: 1)
+  --xhash.dagsondisk value           Number of recent XHash mining DAGs to keep on disk (1+GB each) (default: 2)
+  --xhash.dagslockmmap               Lock memory maps for recent XHash mining DAGs
 
 TRANSACTION POOL OPTIONS:
   --txpool.locals value               Comma separated accounts to treat as locals (no flush, priority inclusion)

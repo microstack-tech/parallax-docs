@@ -18,9 +18,9 @@ prlx --networkid 12345
 
 ### Choosing A Consensus Algorithm
 
-#### **Ethash**
+#### **XHash**
 
-Parallax's PoW algorithm, Ethash, is a system that allows open participation by anyone willing to dedicate resources to mining. While this is a critical property for a public network, the overall security of the blockchain strictly depends on the total amount of resources used to secure it. As such, PoW is a poor choice for private networks with few miners. The Ethash mining 'difficulty' is adjusted automatically so that new blocks are created approximately 12 seconds apart. As more mining resources are deployed on the network, creating a new block becomes harder so that the average block time matches the target block time.
+Parallax's PoW algorithm, XHash, is a system that allows open participation by anyone willing to dedicate resources to mining. While this is a critical property for a public network, the overall security of the blockchain strictly depends on the total amount of resources used to secure it. As such, PoW is a poor choice for private networks with few miners. The XHash mining 'difficulty' is adjusted automatically so that new blocks are created approximately 12 seconds apart. As more mining resources are deployed on the network, creating a new block becomes harder so that the average block time matches the target block time.
 
 #### **Clique**
 
@@ -76,9 +76,9 @@ The `period` configuration option sets the target block time of the chain.
 }
 ```
 
-#### **Ethash Example**
+#### **XHash Example**
 
-Since Ethash is the default consensus algorithm, no additional parameters need to be configured in order to use it. The initial mining difficulty is influenced using the difficulty parameter, but note that the difficulty adjustment algorithm will quickly adapt to the amount of mining resources deployed on the chain.
+Since XHash is the default consensus algorithm, no additional parameters need to be configured in order to use it. The initial mining difficulty is influenced using the difficulty parameter, but note that the difficulty adjustment algorithm will quickly adapt to the amount of mining resources deployed on the chain.
 
 ```json
 {
@@ -93,7 +93,7 @@ Since Ethash is the default consensus algorithm, no additional parameters need t
     "petersburgBlock": 0,
     "istanbulBlock": 0,
     "berlinBlock": 0,
-    "ethash": {}
+    "xhash": {}
   },
   "difficulty": "1",
   "gasLimit": "8000000",
@@ -196,7 +196,7 @@ prlx <other-flags> --unlock 0x7df9a875a174b3bc565e6424a0050ebc1b2d1d82 --mine
 
 Mining can be further configured by changing the default gas limit blocks converge to (with `--miner.gastarget`) and the price transactions are accepted at (with `--miner.gasprice`).
 
-### Running A Miner (Ethash)
+### Running A Miner (XHash)
 
 For PoW in a simple private network, a single CPU miner instance is enough to create a stable stream of blocks at regular intervals. To start a Parallax client instance for mining, it can be run with all the usual flags plus the following to configure mining:
 

@@ -43,7 +43,8 @@
                     "pages": [
                       "parallax-protocol/foundational-topics/consensus/algorithms/overview",
                       "parallax-protocol/foundational-topics/consensus/algorithms/dagger-hashimoto",
-                      "parallax-protocol/foundational-topics/consensus/algorithms/ethash"
+                      "parallax-protocol/foundational-topics/consensus/algorithms/ethash",
+                      "parallax-protocol/foundational-topics/consensus/algorithms/xhash"
                     ]
                   }
                 ]
@@ -256,8 +257,7 @@
             "pages": [
               "guides/mining/introduction",
               "guides/mining/cpu",
-              "guides/mining/gpu",
-              "guides/mining/pool"
+              "guides/mining/gpu"
             ]
           }
         ]
