@@ -9,7 +9,7 @@ Mining on a pool allows you to combine your hashrate with other miners. Instead 
 
 ## Prerequisites
 
-- Installed GPU mining software such as [Ethminer](./gpu).  
+- Installed GPU mining software such as [Hashwarp](./gpu).  
 - An account address to receive rewards.
 - The URL of a Parallax mining pool (for example, `stratum+tcp://<POOL_URL>:4444`).  
 
@@ -27,12 +27,12 @@ Mining on a pool allows you to combine your hashrate with other miners. Instead 
   </Step>
 
   <Step title="Run your miner">
-    Use Ethminer (or another Ethash-compatible miner) to connect to the pool.
+    Use Hashwarp (or another XHash-compatible miner) to connect to the pool.
 
-    Example command with Ethminer:
+    Example command with Hashwarp:
 
     ```bash
-    ethminer -P stratum+tcp://<YOUR_ADDRESS>@<POOL_URL>:4444
+    hashwarp -P stratum+tcp://<YOUR_ADDRESS>@<POOL_URL>:4444
     ```
 
     Replace `<YOUR_ADDRESS>` with your Parallax wallet address.  
@@ -45,7 +45,7 @@ Mining on a pool allows you to combine your hashrate with other miners. Instead 
     If everything is working, you’ll see logs like:
 
     ```
-    m  16:12:42|ethminer  Accepted share #42
+    m  16:12:42|hashwarp  Accepted share #42
     ```
 
     Each accepted share means your miner contributed valid work to the pool.

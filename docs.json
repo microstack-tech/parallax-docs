@@ -257,7 +257,14 @@
             "pages": [
               "guides/mining/introduction",
               "guides/mining/cpu",
-              "guides/mining/gpu"
+              {
+                "group": "GPU Mining",
+                "pages": [
+                  "guides/mining/gpu",
+                  "guides/mining/pool",
+                  "guides/mining/troubleshooting"
+                ]
+              }
             ]
           }
         ]
