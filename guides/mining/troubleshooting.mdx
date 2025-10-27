@@ -15,7 +15,7 @@ it usually means that **Windows cannot locate the NVIDIA OpenCL runtime (nvopenc
 
 ---
 
-## 🧩 Symptoms
+## Symptoms
 
 You may encounter one or more of the following:
 
@@ -26,13 +26,13 @@ You may encounter one or more of the following:
 
 ---
 
-## ⚙️ Cause
+## Cause
 
 Some versions of **NVIDIA DCH** or **OEM/minimal drivers** do not install or properly register the **OpenCL Installable Client Driver (ICD)**. Without this registration, Windows cannot find the OpenCL runtime — leading to Hashwarp failing to initialize your GPU.
 
 ---
 
-## 🪜 Step-by-Step Fix
+## Step-by-Step Fix
 
 ### Step 1 — Locate the OpenCL DLLs
 
@@ -120,7 +120,7 @@ This reinstalls and registers the OpenCL ICD automatically.
 
 ---
 
-### 💡 Alternative Option — Install CUDA Toolkit Instead
+### Alternative Option — Install CUDA Toolkit Instead
 
 If you **don’t want to reinstall your NVIDIA drivers**, you can instead install the **[NVIDIA CUDA Toolkit](https://developer.nvidia.com/cuda-downloads)**.  
 
@@ -134,7 +134,7 @@ This method is often quicker and safer if your GPU drivers are already up to dat
 
 ---
 
-## ✅ Final Check
+## Final Check
 
 Now you can run Hashwarp again:
 
