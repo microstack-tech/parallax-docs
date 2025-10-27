@@ -4,6 +4,10 @@ sidebarTitle: "Windows Troubleshooting"
 description: "Step-by-step guide to fix missing OpenCL issues when running Hashwarp on Windows."
 ---
 
+# Troubleshooting Hashwarp on Windows
+
+> Step-by-step guide to fix missing OpenCL issues when running Hashwarp on Windows.
+
 If you're trying to run **Hashwarp** on Windows and see errors like:
 
 ```
@@ -11,34 +15,68 @@ No OpenCL platforms found
 No usable mining devices found
 ```
 
-it usually means that **Windows cannot locate the NVIDIA OpenCL runtime (nvopencl.dll)** required for GPU mining. This guide will walk you through how to fix the issue manually.
+it usually means that **Windows cannot locate the NVIDIA or AMD OpenCL runtime** (`nvopencl.dll` or `amdocl.dll`) required for GPU mining. This guide explains both the **automatic** and **manual** ways to fix the issue.
 
 ---
 
-## Symptoms
+## Quick Fix — Automatic Script (Recommended)
 
-You may encounter one or more of the following:
+Hashwarp includes an **automated OpenCL registry repair script** that fixes the issue for you.
 
-- `nvopencl.dll` missing in `C:\Windows\System32\` or `C:\Windows\SysWOW64\`
-- No `Khronos\OpenCL\Vendors` registry key present
-- Tools like `clinfo` showing *no OpenCL platforms*
-- Hashwarp not detecting your GPU even though NVIDIA drivers are installed
+### Script: `fix-opencl-icd.vbs`
+
+This VBScript automatically:
+
+1. Detects your Windows architecture (32-bit or 64-bit)
+2. Scans for AMD and NVIDIA OpenCL ICD libraries
+3. Backs up existing registry keys
+4. Registers missing OpenCL vendor entries for:
+   - NVIDIA (`nvopencl.dll`, `nvopencl64.dll`, `nvopencl32.dll`)
+   - AMD (`amdocl*.dll`)
+5. Confirms success and recommends rebooting
+
+#### How to Use
+
+1. Locate `fix-opencl-icd.vbs` inside your Hashwarp release package.  
+2. Right-click it and choose **Run** (it will self-elevate if needed).  
+3. Follow the on-screen prompts:
+   - Choose `[N] NVIDIA`, `[A] AMD`, or `[B] Both`.
+   - If the script cannot find your OpenCL DLLs, paste the full paths when asked.  
+     Example path:
+
+     ```
+     C:\Windows\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_xxxxx\nvopencl64.dll
+     ```
+
+4. When it confirms successful registration, **reboot your PC**.
+5. After reboot, run Hashwarp again — your GPU should now be detected.
+
+#### Example registry entries created by the script
+
+```
+[HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\OpenCL\Vendors]
+"C:\Windows\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d471cab2f241c3c2\nvopencl64.dll"=dword:00000000
+"C:\Windows\System32\DriverStore\FileRepository\amdgpu.inf_amd64_abcdef1234567890\amdocl64.dll"=dword:00000000
+```
+
+The script is safe to use — it does not delete files, only repairs registry entries and keeps backups at:
+
+```
+%TEMP%\OpenCL_Vendors_64.reg
+%TEMP%\OpenCL_Vendors_32.reg
+```
+
+If you prefer to fix things manually, continue below.
 
 ---
 
-## Cause
-
-Some versions of **NVIDIA DCH** or **OEM/minimal drivers** do not install or properly register the **OpenCL Installable Client Driver (ICD)**. Without this registration, Windows cannot find the OpenCL runtime — leading to Hashwarp failing to initialize your GPU.
-
----
-
-## Step-by-Step Fix
+## Manual Fix (Advanced)
 
 ### Step 1 — Locate the OpenCL DLLs
 
 Run **PowerShell as Administrator**, then execute:
 
-```powershell
+```powershell  theme={null}
 Get-ChildItem -Path "C:\" -Filter "nvopencl*.dll" -Recurse -ErrorAction SilentlyContinue
 ```
 
@@ -57,7 +95,7 @@ If you find these files, note their exact folder paths — you’ll need them la
 
 Still in PowerShell, run:
 
-```powershell
+```powershell  theme={null}
 Get-ItemProperty -Path 'HKLM:\SOFTWARE\Khronos\OpenCL\Vendors'
 Get-ItemProperty -Path 'HKLM:\SOFTWARE\WOW6432Node\Khronos\OpenCL\Vendors'
 ```
@@ -70,7 +108,7 @@ If you see **“The system was unable to find the specified registry key or valu
 
 Copy and run the following commands in **Administrator PowerShell**, replacing the paths with your actual ones from Step 1:
 
-```powershell
+```powershell  theme={null}
 $icd64 = 'C:\Windows\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_xxxxx\nvopencl64.dll'
 $icd32 = 'C:\Windows\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_xxxxx\nvopencl32.dll'
 
@@ -93,7 +131,7 @@ Then **reboot your PC**.
 
 After restarting, run the following checks:
 
-```powershell
+```powershell  theme={null}
 reg query "HKLM\SOFTWARE\Khronos\OpenCL\Vendors"
 clinfo | Select-String "Device Name"
 ```
@@ -113,8 +151,8 @@ If you see this, OpenCL is working — Hashwarp should now detect your GPU corre
 
 If the manual fix doesn’t persist after a driver update, or fails to register, reinstall the **Standard Game Ready Driver**:
 
-1. Go to [NVIDIA Driver Downloads](https://www.nvidia.com/Download/index.aspx)  
-2. Choose **Custom (Advanced)** → **Perform a clean installation**  
+1. Go to [NVIDIA Driver Downloads](https://www.nvidia.com/Download/index.aspx)
+2. Choose **Custom (Advanced)** → **Perform a clean installation**
 
 This reinstalls and registers the OpenCL ICD automatically.
 
@@ -122,13 +160,11 @@ This reinstalls and registers the OpenCL ICD automatically.
 
 ### Alternative Option — Install CUDA Toolkit Instead
 
-If you **don’t want to reinstall your NVIDIA drivers**, you can instead install the **[NVIDIA CUDA Toolkit](https://developer.nvidia.com/cuda-downloads)**.  
+If you **don’t want to reinstall your NVIDIA drivers**, you can instead install the **[NVIDIA CUDA Toolkit](https://developer.nvidia.com/cuda-downloads)**.
 
 The CUDA Toolkit package includes the required **nvopencl.dll** and registers the OpenCL runtime automatically during setup.
 
-<Note>
-If after installing CUDA Toolkit the OpenCL runtime is still not registered, re-do steps 1, 3 and 4.
-</Note>
+> If after installing CUDA Toolkit the OpenCL runtime is still not registered, re-do steps 1, 3 and 4.
 
 This method is often quicker and safer if your GPU drivers are already up to date and working fine for gaming or other workloads.
 
@@ -138,7 +174,7 @@ This method is often quicker and safer if your GPU drivers are already up to dat
 
 Now you can run Hashwarp again:
 
-```bash
+```bash  theme={null}
 hashwarp -P http://127.0.0.1:8545
 ```
 
@@ -148,4 +184,4 @@ If everything was successful, you should see output like:
 m  15:42:12|hashwarp  Mining on GPU #0: 32.5MH/s
 ```
 
-Congratulations — your GPU is now mining successfully on Parallax.
+Your GPU is now recognized and mining successfully on Parallax.
