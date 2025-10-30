@@ -35,14 +35,10 @@ This guide will show you how to connect MetaMask to your local Parallax node.
     Fill in the fields with the following information:
 
     - **Network Name:** `Parallax Local`  
-    - **New RPC URL:** `http://127.0.0.1:8545`  
-    - **Chain ID:** `2110` for mainnet, `2111` for testnet  
+    - **New RPC URL:** `https://rpc.parallaxchain.org`  
+    - **Chain ID:** `2110`
     - **Currency Symbol:** `LAX`  
     - **Block Explorer URL:** (optional) `https://explorer.parallaxchain.org`  
-
-    <Note>
-    The `http://127.0.0.1:8545` RPC is provided by your local Parallax client. Make sure your node is running with the `--http` flag enabled.
-    </Note>
   </Step>
 
   <Step title="Save and switch network">
@@ -61,30 +57,6 @@ Once connected, you can:
 - **Create new addresses**: MetaMask will generate them automatically.  
 - **View balances**: See how much laxes each address holds.  
 - **Send transactions**: Transfer laxes to other addresses on the Parallax network.
-
----
-
-## Troubleshooting
-
-- If MetaMask can’t connect, ensure your node is running with HTTP enabled:  
-
-  ```bash
-  ./prlx --http --http.api "eth,net,web3"
-  ```
-
-- Make sure the RPC URL (`127.0.0.1:8545`) is correct.  
-- If using a firewall, check that port **8545** is not blocked.
-- If on Linux, make sure to set `--http.addr 0.0.0.0` when starting the Parallax client:
-
-  ```bash
-  ./prlx --http --http.addr 0.0.0.0 --http.api "eth,net,web"
-  ```
-
-- Some browsers might fail to connect MetaMask to your local Parallax node. This can be fixed by running the client with:
-
-  ```bash
-  ./prlx --http --http.vhosts "*" --http.corsdomain "*"
-  ```
 
 ---
 
